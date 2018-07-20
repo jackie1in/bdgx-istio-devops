@@ -87,8 +87,10 @@ curl -o /dev/null -s -w "%{http_code}\n" http://${GATEWAY_URL}/productpage
 >返回 200 代表正常
 
 ##### 浏览器访问：
-http://192.168.1.72:31380/productpage   不断刷新，会有不同的页面出现
--------------------------------------------------------------------------------
+```
+http://192.168.1.72:31380/productpage
+```
+>不断刷新，会有不同的页面出现
 ##### 配置路由访问规则
 ```
 istioctl create -f samples/bookinfo/routing/route-rule-all-v1.yaml
